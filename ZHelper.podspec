@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name         = 'ZHelper'
-s.version      = '0.0.2'
+s.version      = '0.0.4'
 s.summary      = 'An easy way to use pull-to-refresh'
 s.homepage     = 'https://github.com/saw471/ZHelper'
 s.license      = 'MIT'
