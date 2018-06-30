@@ -30,7 +30,7 @@ static char overlayKey;
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
         
         CGFloat h = 20;
-        if (iPhoneX) { h=44; }
+//        if (iPhoneX) { h=44; }
         
         self.overlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) + h)];
         self.overlay.userInteractionEnabled = NO;
