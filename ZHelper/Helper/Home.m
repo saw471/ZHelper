@@ -39,7 +39,7 @@
 - (CGFloat)cellHeight
 {
     // 文字的最大尺寸(设置内容label的最大size，这样才可以计算label的实际高度，需要设置最大宽度，但是最大高度不需要设置，只需要设置为最大浮点值即可)，53为内容label到cell左边的距离
-    CGSize maxSize = CGSizeMake((ScreenWidth- 30 - 2*(2+1)) / 2, MAXFLOAT);
+    CGSize maxSize = CGSizeMake(([UIScreen mainScreen].bounds.size.width- 30 - 2*(2+1)) / 2, MAXFLOAT);
 
     // 计算内容label的高度
     CGFloat textH = [self.name boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
@@ -60,7 +60,7 @@
 // 手动计算 方法3代码
 - (CGFloat)cellwidth{
     // 文字的最大尺寸(设置内容label的最大size，这样才可以计算label的实际高度，需要设置最大宽度，但是最大高度不需要设置，只需要设置为最大浮点值即可)，53为内容label到cell左边的距离
-    CGSize maxSize = CGSizeMake((ScreenWidth- 30 - 2*(2+1)) / 2, 50);
+    CGSize maxSize = CGSizeMake(([UIScreen mainScreen].bounds.size.width- 30 - 2*(2+1)) / 2, 50);
     
     // 计算内容label的高度
     CGFloat textH = [self.name boundingRectWithSize:maxSize
