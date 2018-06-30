@@ -61,7 +61,7 @@ typedef NS_ENUM(NSInteger,NetType){
 /**  创建颜色图片  */
 + (UIImage *)imageWithColor:(UIColor *)color ;
 /**  网络判断  */
-+ (NSInteger) netBoolType;
+//+ (NSInteger) netBoolType;
 
 /**  去导航条底部黑线  */
 + (UIImageView *)findHairlineImageViewUnder:(UIView *)view ;
